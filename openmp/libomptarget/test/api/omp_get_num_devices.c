@@ -2,6 +2,7 @@
 // RUN: %libomptarget-compile-run-and-check-powerpc64-ibm-linux-gnu
 // RUN: %libomptarget-compile-run-and-check-powerpc64le-ibm-linux-gnu
 // RUN: %libomptarget-compile-run-and-check-x86_64-pc-linux-gnu
+// RUN: %libomptarget-compile-run-and-check-ve-unknown-linux-unknown
 
 #include <stdio.h>
 #include <omp.h>

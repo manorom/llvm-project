@@ -13,6 +13,10 @@
 // RUN: %libomptarget-compile-x86_64-pc-linux-gnu
 // RUN: %libomptarget-run-x86_64-pc-linux-gnu 2>&1 \
 // RUN: | %fcheck-x86_64-pc-linux-gnu
+
+// RUN: %libomptarget-compile-ve-unknown-linux-unknown
+// RUN: %libomptarget-run-ve-unknown-linux-unknown 2>&1 \
+// RUN: | %fcheck-ve-unknown-linux-unknown
 //
 // END.
 

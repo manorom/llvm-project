@@ -18,6 +18,10 @@
 // RUN: %libomptarget-run-fail-nvptx64-nvidia-cuda 2>&1 \
 // RUN: | %fcheck-nvptx64-nvidia-cuda
 
+// RUN: %libomptarget-compile-ve-unknown-linux-unknown
+// RUN: %libomptarget-run-fail-ve-unknown-linux-unknown 2>&1 \
+// RUN: | %fcheck-ve-unknown-linux-unknown
+
 // CHECK: Libomptarget fatal error 1: failure of target construct while offloading is mandatory
 
 int main() {
