@@ -3,7 +3,7 @@
 // RUN: %libomptarget-compile-run-and-check-powerpc64le-ibm-linux-gnu
 // RUN: %libomptarget-compile-run-and-check-x86_64-pc-linux-gnu
 // RUN: %libomptarget-compile-run-and-check-nvptx64-nvidia-cuda
-// RUN: %libomptarget-compile-run-and-check-ve-unknown-linux-unknown
+// RUN: %libomptarget-compile-ve-unknown-linux-unknown | env VE_LD_LIBRARY_PATH=%host-rtl-dir %libomptarget-run-ve-unknown-linux-unknown | %fcheck-ve-unknown-linux-unknown
 
 #include <stdio.h>
 #include <omp.h>

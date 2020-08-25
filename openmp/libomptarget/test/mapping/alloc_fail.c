@@ -19,7 +19,7 @@
 // RUN: | %fcheck-nvptx64-nvidia-cuda
 
 // RUN: %libomptarget-compile-ve-unknown-linux-unknown
-// RUN: %libomptarget-run-fail-ve-unknown-linux-unknown 2>&1 \
+// RUN: env VE_LD_LIBRARY_PATH=%host-rtl-dir %libomptarget-run-fail-ve-unknown-linux-unknown 2>&1 \
 // RUN: | %fcheck-ve-unknown-linux-unknown
 
 // CHECK: Libomptarget fatal error 1: failure of target construct while offloading is mandatory

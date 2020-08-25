@@ -15,7 +15,7 @@
 // RUN: | %fcheck-x86_64-pc-linux-gnu
 
 // RUN: %libomptarget-compile-ve-unknown-linux-unknown
-// RUN: %libomptarget-run-ve-unknown-linux-unknown 2>&1 \
+// RUN: env VE_LD_LIBRARY_PATH=%host-rtl-dir %libomptarget-run-ve-unknown-linux-unknown 2>&1 \
 // RUN: | %fcheck-ve-unknown-linux-unknown
 //
 // END.
